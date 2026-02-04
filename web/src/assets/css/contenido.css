@@ -1,0 +1,34 @@
+
+.div_titulopanelc{
+  margin-top: 80px;
+  width: calc(100vw - 50px);
+}
+@font-face {
+  font-family: varelaround;
+  src: url( ../fonts/Asap-Regular.ttf);
+}
+@font-face {
+  font-family: minionpro;
+  src: url( ../fonts/MinionPro-Regular.otf);
+}
+@font-face {
+  font-family: proximanova;
+  src: url( ../fonts/proxima-nova.otf);
+}
+*{
+  font-family: proximanova;
+}
+.Panel_Contenido{
+  transition-timing-function: linear;
+  transition: width 0.8s, height 0.8s, transform 0.8s;
+	width: 100%;
+  height: 100%;
+
+  padding: 20px;
+  z-index: 8;
+}
+.fontitlecontent{
+  font-size: 38px;
+}
+
+

@@ -1,0 +1,283 @@
+:root{
+  --neon: #00FF8F;
+  --bg: #090909;
+
+  --white: rgba(255,255,255,1);
+  --w10: rgba(255,255,255,0.10);
+  --w08: rgba(255,255,255,0.08);
+  --w06: rgba(255,255,255,0.06);
+  --w05: rgba(255,255,255,0.05);
+  --w04: rgba(255,255,255,0.04);
+  --w03: rgba(255,255,255,0.03);
+  --w02: rgba(255,255,255,0.02);
+  --w60: rgba(255,255,255,0.60);
+  --w40: rgba(255,255,255,0.40);
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: #fff;
+  overflow: hidden;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Root */
+.qe-root{
+   position: relative;
+
+}
+.qe-root{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fondo radial suave */
+.qe-glow{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle at center, rgba(0,255,143,0.03) 0%, transparent 70%);
+}
+
+/* Contenido */
+.qe-main{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 980px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Row de marcas */
+.qe-brandRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 84px;
+  margin-bottom: 48px;
+  opacity: 0.80;
+}
+
+.qe-brand{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qe-brandIconBox{
+  width: auto;
+  height: auto;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: var(--w05);
+  border: 1px solid var(--w10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qe-brandIconBox img{
+  display: block;
+  height: 84px;
+  width: auto;
+  object-fit: contain;
+}
+
+.qe-brand:hover .qe-brandIconBox{
+  border-color: rgba(0,255,143,0.30);
+}
+
+.qe-brandIcon{
+  font-size: 34px;
+  color: var(--neon);
+  line-height: 1;
+}
+
+.qe-brandLabel{
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.40em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.40);
+}
+
+.qe-brandDivider{
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.10), transparent);
+}
+
+/* Status pill */
+.qe-statusWrap{
+  margin-bottom: 40px;
+}
+
+.qe-statusPill{
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.qe-statusDot{
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--neon);
+  margin-right: 10px;
+  opacity: 0.85;
+}
+
+.qe-statusText{
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.60);
+}
+
+/* Title */
+.qe-title{
+  margin: 0;
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255,255,255,0.30);
+}
+
+.qe-title2{
+  display: inline-block;
+}
+
+/* CTA */
+.qe-ctaRow{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.qe-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  padding: 22px 56px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  border: 1.5px solid rgba(0,255,143,0.40);
+  background: rgba(0,255,143,0.08);
+
+  box-shadow: 0 4px 15px rgba(0,255,143,0.10);
+  transition: background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .20s ease;
+}
+
+.qe-btn:hover{
+  background: rgba(0,255,143,0.15);
+  border-color: rgba(0,255,143,0.80);
+  box-shadow: 0 0 30px rgba(0,255,143,0.20);
+  transform: translateY(-1px);
+}
+
+.qe-btn:active{
+  transform: translateY(0px);
+}
+
+.qe-btnText{
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: var(--neon);
+}
+
+.qe-btnIcon{
+  font-size: 22px;
+  color: var(--neon);
+  transition: transform .20s ease;
+   display: inline-flex;
+  align-items: center;
+}
+
+.qe-btn:hover .qe-btnIcon{
+  transform: translateX(3px);
+}
+
+/* Esquinas decorativas */
+.qe-corner{
+  position: fixed;
+  z-index: 0;
+  opacity: 0.10;
+  display: none;
+}
+
+.qe-cornerBox{
+  width: 48px;
+  height: 48px;
+}
+
+.qe-corner-tl{
+  top: 48px;
+  left: 48px;
+}
+.qe-corner-tl .qe-cornerBox{
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.qe-corner-br{
+  bottom: 48px;
+  right: 48px;
+}
+.qe-corner-br .qe-cornerBox{
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+/* Solo desktop */
+@media (min-width: 1024px){
+  .qe-corner{ display: block; }
+}
+
+/* Responsive: ajuste espacios */
+@media (max-width: 640px){
+  .qe-brandRow{ gap: 28px; margin-bottom: 56px; }
+  .qe-btn{ padding: 18px 34px; gap: 16px; }
+  .qe-btnText{ font-size: 14px; }
+}
+/* Forzar dark absoluto en toda la app */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #090909 !important;
+  color: #ffffff;
+}
+
+/* Electron / wrappers comunes */
+.app,
+.app-root,
+.main,
+.main-content {
+  background-color: #090909 !important;
+  min-height: 100vh;
+}
+.qe-logo{ height: 84px; width: auto; object-fit: contain; display:block; }

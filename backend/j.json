@@ -1,0 +1,26 @@
+{"resumen_pretensiones_html":"<p>pretensiones</p>",
+"postura_patron_detalle":"",
+"prestaciones":[],
+"prestaciones_reclamadas":"",
+"id":75,
+"nombre_abogado":"Briseida Estefanía Macías Delgado",
+"id_abogado":42,
+"riesgos_detectados":"<p>riesgos</p>",
+"resultado":"convenio",
+"monto_convenio":200,
+"forma_pago_convenio":1,
+"fecha_pago_convenio":null,
+"pagos_convenio":[{"monto":"200","forma_pago":1,"fecha":"2025-12-11 19:54:44","tipo_pago":"inmediato"}],
+"fecha_proxima_audiencia":"2025-12-27 12:53:12",
+"motivo_diferimiento":"",
+"motivo_archivo":"",
+"num_audiencia":1,
+"fecha_audiencia":"2025-12-27T12:53:12",
+"id_conciliacion_status":2,
+"incomparecencia":null,
+"meta":{"expediente":"UAC/CI/2025/000965","trabajador":"saul jared soto peñuela","empresa":"OXXO","causaTerminacion":"","fechaAudiencia":"2025-12-27 12:53:12"}}
+
+
+
+
+{"resumen_pretensiones_html":"<p>pretensiones</p>","postura_patron_detalle":"","prestaciones":[],"prestaciones_reclamadas":"","id":75,"nombre_abogado":"Briseida Estefanía Macías Delgado","id_abogado":42,"propuesta_inicial_trabajador":1,"propuesta_inicial_patron":2,"propuesta_final_trabajador":1,"propuesta_final_patron":2,"riesgos_detectados":"<p>riesgos</p>","resultado":"diferimiento","monto_convenio":200,"forma_pago_convenio":1,"fecha_pago_convenio":null,"pagos_convenio":[{"monto":"200","forma_pago":1,"fecha":"2025-12-11 19:54:44","tipo_pago":"inmediato"}],"fecha_proxima_audiencia":"2025-12-27 12:53:12","motivo_diferimiento":"","motivo_archivo":"","num_audiencia":1,"fecha_audiencia":"2025-12-27T12:53:12","id_conciliacion_status":2,"incomparecencia":null,"meta":{"expediente":"UAC/CI/2025/000965","trabajador":"saul jared soto peñuela","empresa":"OXXO","causaTerminacion":"","fechaAudiencia":"2025-12-27 12:53:12"},"prestaciones_montos":{"indemnizacion":{"monto":0},"prima_antiguedad":{"monto":0},"aguinaldo_prop":{"monto":0},"salarios_caidos":{"monto":0},"vacaciones_prop":{"monto":0},"prima_vacacional":{"monto":0},"extra_1765140408252":{"label":"prestacion 2 ","monto":0}},"prestaciones_montos_total":0}

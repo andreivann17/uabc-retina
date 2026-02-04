@@ -1,0 +1,10 @@
+// redux/actions/types.js
+
+export const FETCH_SCROLL = 'FETCH_SCROLL';
+
+
+export const FETCH_MESES_SUCCESS = 'FETCH_MESES_SUCCESS';
+export const FETCH_MESES_FAILURE = 'FETCH_MESES_FAILURE';
+
+export const FETCH_FECHAS_SUCCESS = 'FETCH_FECHAS_SUCCESS';
+export const FETCH_FECHAS_FAILURE = 'FETCH_FECHAS_FAILURE';

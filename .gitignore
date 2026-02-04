@@ -1,0 +1,26 @@
+# =========================
+# Models (no subir pesos)
+# =========================
+
+backend/app/models/*
+backend/app/gptq/*
+!backend/app/models/.gitkeep
+backend/uploads/
+# =========================
+# Python
+# =========================
+backend/venv/
+__pycache__/
+*.pyc
+
+# =========================
+# Node / Frontend
+# =========================
+web/node_modules/
+web/public/models/
+
+# =========================
+# Local / experimental
+# =========================
+desktop/
+desktop-monitor/

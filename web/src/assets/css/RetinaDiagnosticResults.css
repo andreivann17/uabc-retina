@@ -1,0 +1,795 @@
+/* src/assets/css/RetinaDiagnosticResults.css */
+
+/* =========================
+   Theme tokens
+========================= */
+:root {
+  --primary: #008a45;
+  --bg: #090909;
+
+  --glass: rgba(0, 0, 0, 0.42);
+  --glass2: rgba(255, 255, 255, 0.035);
+  --stroke: rgba(255, 255, 255, 0.08);
+  --stroke2: rgba(255, 255, 255, 0.06);
+
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.55);
+  --muted2: rgba(255, 255, 255, 0.35);
+
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.6);
+  --blur: blur(16px);
+
+  --r-lg: 22px;
+  --r-md: 16px;
+  --r-sm: 12px;
+
+  --maxw: 1280px;
+}
+
+/* =========================
+   Page
+========================= */
+.rr-page {
+  min-height: 100vh;
+  background: radial-gradient(900px 500px at 10% 0%, rgba(0, 138, 69, 0.18), transparent 55%),
+    radial-gradient(700px 420px at 100% 40%, rgba(0, 138, 69, 0.12), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 24px;
+}
+
+.rr-shell {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
+}
+
+/* =========================
+   Header
+========================= */
+.rr-header {
+  border-radius: var(--r-lg);
+  padding: 22px 22px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.rr-headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.rr-kicker {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.rr-title {
+  font-size: 40px;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.96);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rr-submeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.rr-submeta2 {
+  color: var(--muted2);
+}
+
+.rr-submetaStrong {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+}
+
+.rr-dot {
+  color: rgba(255, 255, 255, 0.25);
+  margin: 0 2px;
+}
+
+.rr-headerRight {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   Buttons
+========================= */
+.rr-btn {
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+  user-select: none;
+}
+
+.rr-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rr-btn:active {
+  transform: translateY(0px);
+}
+
+.rr-ic {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.rr-btnGhost {
+  border-color: rgba(0, 138, 69, 0.55);
+  color: rgba(0, 138, 69, 0.95);
+  background: rgba(0, 138, 69, 0.06);
+}
+
+.rr-btnGhost:hover {
+  background: rgba(0, 138, 69, 0.1);
+  border-color: rgba(0, 138, 69, 0.75);
+  box-shadow: 0 14px 40px rgba(0, 138, 69, 0.12);
+}
+
+.rr-btnPrimary {
+  border-color: rgba(0, 138, 69, 0.85);
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 14px 50px rgba(0, 138, 69, 0.2);
+}
+
+.rr-btnPrimary:hover {
+  background: rgba(0, 138, 69, 0.9);
+  border-color: rgba(0, 138, 69, 0.95);
+  box-shadow: 0 18px 60px rgba(0, 138, 69, 0.26);
+}
+
+.rr-btnIconOnly {
+  padding: 10px 10px;
+  width: 42px;
+  justify-content: center;
+}
+
+/* =========================
+   Grid layout
+========================= */
+.rr-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.rr-mainCol {
+  min-width: 0;
+}
+
+.rr-sideCol {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (min-width: 1024px) {
+  .rr-grid {
+    grid-template-columns: 8fr 4fr;
+    gap: 18px;
+    align-items: start;
+  }
+}
+
+/* =========================
+   Card
+========================= */
+.rr-card {
+  border-radius: var(--r-lg);
+  padding: 18px;
+}
+
+.rr-cardTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.rr-cardTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.rr-icPrimary {
+  color: rgba(0, 138, 69, 0.95);
+  font-size: 20px;
+}
+
+/* =========================
+   Scan card
+========================= */
+.rr-scan {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+}
+
+.rr-cardHead {
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rr-cardHeadLeft {
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.02em;
+}
+
+.rr-tabs {
+  display: inline-flex;
+  gap: 0;
+  padding: 4px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rr-tab {
+  padding: 8px 14px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 140ms ease, color 140ms ease, transform 140ms ease;
+}
+
+.rr-tab:hover {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.rr-tabActive {
+  background: rgba(0, 138, 69, 0.95);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 138, 69, 0.25);
+}
+
+.rr-scanBody {
+  position: relative;
+  flex: 1;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.rr-scanImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: var(--r-md);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
+}
+
+.rr-scanRing {
+  position: absolute;
+  inset: 20px;
+  border-radius: var(--r-md);
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* Empty */
+.rr-empty {
+  text-align: center;
+  padding: 32px 18px;
+}
+
+.rr-emptyTitle {
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.rr-emptySub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* =========================
+   Bars
+========================= */
+.rr-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rr-barRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rr-barTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.rr-barTopHot {
+  color: rgba(251, 146, 60, 0.95);
+}
+
+.rr-barNameHot {
+  color: rgba(251, 146, 60, 0.95);
+  font-weight: 950;
+}
+
+.rr-barPct {
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.08em;
+}
+
+.rr-barPctHot {
+  color: rgba(251, 146, 60, 0.95);
+}
+
+.rr-barTrack {
+  height: 7px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.rr-barFill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.rr-fillPrimary {
+  background: rgba(0, 138, 69, 0.95);
+  box-shadow: 0 0 18px rgba(0, 138, 69, 0.22);
+}
+
+.rr-fillOrange {
+  background: rgba(249, 115, 22, 0.95);
+  box-shadow: 0 0 18px rgba(249, 115, 22, 0.22);
+}
+
+.rr-fillRed {
+  background: rgba(220, 38, 38, 0.95);
+  box-shadow: 0 0 18px rgba(220, 38, 38, 0.2);
+}
+
+/* =========================
+   Biomarker section
+========================= */
+.rr-biomSectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.rr-biomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 420px) {
+  .rr-biomGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rr-biomCard {
+  border-radius: var(--r-lg);
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-left: 2px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.rr-biomIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rr-biomIcon .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.rr-biomText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.rr-biomK {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.rr-biomV {
+  font-size: 14px;
+  font-weight: 850;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Biomarker colors */
+.rr-biomAmber {
+  border-left-color: rgba(245, 158, 11, 0.65);
+  background: rgba(245, 158, 11, 0.06);
+}
+.rr-icAmber {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.15);
+}
+.rr-icAmber .material-symbols-outlined {
+  color: rgba(245, 158, 11, 0.95);
+}
+
+.rr-biomRose {
+  border-left-color: rgba(244, 63, 94, 0.65);
+  background: rgba(244, 63, 94, 0.06);
+}
+.rr-icRose {
+  background: rgba(244, 63, 94, 0.1);
+  border-color: rgba(244, 63, 94, 0.15);
+}
+.rr-icRose .material-symbols-outlined {
+  color: rgba(244, 63, 94, 0.95);
+}
+
+.rr-biomOrange {
+  border-left-color: rgba(249, 115, 22, 0.65);
+  background: rgba(249, 115, 22, 0.06);
+}
+.rr-icOrange {
+  background: rgba(249, 115, 22, 0.1);
+  border-color: rgba(249, 115, 22, 0.15);
+}
+.rr-icOrange .material-symbols-outlined {
+  color: rgba(249, 115, 22, 0.95);
+}
+
+.rr-biomEmerald {
+  border-left-color: rgba(16, 185, 129, 0.65);
+  background: rgba(16, 185, 129, 0.06);
+}
+.rr-icEmerald {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.15);
+}
+.rr-icEmerald .material-symbols-outlined {
+  color: rgba(16, 185, 129, 0.95);
+}
+
+/* =========================
+   Details
+========================= */
+.rr-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rr-detailRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rr-detailRow:last-child {
+  border-bottom: 0;
+}
+
+.rr-detailKey {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.rr-detailVal {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.rr-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 14px 0;
+}
+
+.rr-miniK {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(0, 138, 69, 0.95);
+  margin-bottom: 10px;
+}
+
+.rr-twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+
+@media (max-width: 420px) {
+  .rr-twoCol {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rr-miniRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.rr-miniKey {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 650;
+}
+
+.rr-miniVal {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 850;
+}
+
+.rr-hitList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rr-hit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 750;
+}
+
+.rr-hitMuted {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.rr-hitLabel {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.rr-hitSep {
+  color: rgba(255, 255, 255, 0.22);
+}
+
+.rr-hitVal {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* =========================
+   Footer
+========================= */
+.rr-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.18);
+  padding: 10px 2px;
+}
+
+@media (max-width: 720px) {
+  .rr-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rr-headerRight {
+    justify-content: flex-start;
+  }
+
+  .rr-title {
+    font-size: 34px;
+    white-space: normal;
+  }
+
+  .rr-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: 0.18em;
+  }
+}
+/* ✅ Pega esto al FINAL de tu RetinaDiagnosticResults.css (override).
+   Hace que el layout use TODO el ancho/alto de pantalla y sea responsive. */
+
+.rr-page{
+  min-height: 100vh;
+  width: 100%;
+  padding: 18px;              /* antes 24px; en pantallas chicas se siente “corto” */
+  box-sizing: border-box;
+}
+
+.rr-shell{
+  width: 100%;
+  max-width: none;            /* ✅ quita el límite de 1280px */
+  margin: 0;                  /* ✅ ya no centra con márgenes */
+}
+
+/* ✅ En desktop grande, deja respiración sin “encoger” demasiado */
+@media (min-width: 1024px){
+  .rr-page{ padding: 22px; }
+}
+
+/* ✅ En pantallas muy grandes, si quieres margen lateral pero “full”:
+   (si lo quieres totalmente full, BORRA este bloque) */
+@media (min-width: 1600px){
+  .rr-shell{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* ✅ Que las columnas ocupen el alto disponible y se alineen mejor */
+@media (min-width: 1024px){
+  .rr-grid{
+    min-height: calc(100vh - 180px);  /* header + gaps + footer aprox */
+    align-items: stretch;
+  }
+  .rr-mainCol, .rr-sideCol{
+    height: 100%;
+  }
+  .rr-scan{
+    min-height: 640px; /* sube el “panel grande” para que no se vea corto */
+  }
+}
+
+/* ✅ Ajuste en móvil/tablet para que no se vea apretado */
+@media (max-width: 768px){
+  .rr-page{ padding: 12px; }
+  .rr-header{ padding: 16px; }
+  .rr-card{ padding: 14px; }
+  .rr-scan{ min-height: 520px; }
+}
+/* ✅ Pega esto al FINAL de tu RetinaDiagnosticResults.css
+   Reduce la imagen (panel scan) y hace que el sidebar quepa mejor en una sola pantalla. */
+
+/* 1) Desktop: baja altura del panel grande + limita tamaño del contenido */
+@media (min-width: 1024px){
+  /* La card del scan (antes estaba muy alta) */
+  .rr-scan{
+    min-height: 520px;      /* prueba 480–560 según tu monitor */
+  }
+
+  /* El contenedor del scan centra y evita que la imagen "explote" */
+  .rr-scanBody{
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Limita la imagen respecto al viewport y al card */
+  .rr-scanImg{
+    max-width: 92%;
+    max-height: calc(100vh - 330px); /* header + paddings + footer aprox */
+    object-fit: contain;
+  }
+
+  /* Deja el sidebar visible sin empujar tanto */
+  .rr-sideCol{
+    gap: 14px;
+  }
+  .rr-card{
+    padding: 16px;
+  }
+  .rr-bars{
+    gap: 12px;
+  }
+}
+
+/* 2) Si tu pantalla es 1366x768 o similar, reduce más */
+@media (min-width: 1024px) and (max-height: 800px){
+  .rr-scan{ min-height: 460px; }
+  .rr-scanImg{ max-height: calc(100vh - 300px); }
+  .rr-card{ padding: 14px; }
+  .rr-biomGrid{ gap: 10px; }
+}
+
+/* 3) Extra: en monitores MUY grandes, evita exageración */
+@media (min-width: 1600px){
+  .rr-scanImg{
+    max-width: 86%;
+    max-height: calc(100vh - 360px);
+  }
+}

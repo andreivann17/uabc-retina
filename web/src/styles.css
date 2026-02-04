@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+/* -------- Transiciones opcionales -------- */
+.page-enter { opacity: 0; transform: translateY(20px); }
+.page-enter-active { opacity: 1; transform: translateY(0); transition: opacity 300ms ease-out, transform 300ms ease-out; }
+.page-exit { opacity: 1; transform: translateY(0); }
+.page-exit-active { opacity: 0; transform: translateY(-20px); transition: opacity 300ms ease-out, transform 300ms ease-out; }
+
+/* -------- Global -------- */
+html, body, #root { height: 100%; margin: 0; overflow: hidden; }
+body { background: #f0f2f5; }
+
+/* =========================
+   HEADER (2 niveles fijos)
+   ========================= */
+.electron-header{
+  position: fixed; top: 0; left: 0; right: 0;
+  background: #00723f; color: #fff;
+  -webkit-app-region: drag;   /* drag en la zona no interactiva */
+  z-index: 2000;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+/* Filas */
+.eh-row{
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 12px;
+}
+.eh-top   { height: 36px; }     /* Fila 1: logo + perfil + window btns */
+.eh-bottom{ height: 56px; }     /* Fila 2: flechas+titulo / menú */
+
+/* Columnas */
+.eh-left, .eh-right{ display: flex; align-items: center; gap: 10px; font-size: 14px;}
+.eh-left { justify-content: flex-start; }
+.eh-right{ justify-content: flex-end; }
+
+/* Elementos interactivos: no-drag */
+.electron-no-drag { -webkit-app-region: no-drag; }
+
+/* Logo (fila 1 izquierda) */
+.eh-logo{ width: 18px; display: block; }
+
+/* Perfil + controles (fila 1 derecha) */
+.user-btn { color: #fff !important; }
+.profile-dot{ background: gold; width: 64px; height: 64px; border-radius: 50%; }
+.profile-dot.small{ width: 20px; height: 20px; border-radius: 50%; }
+
+.win-controls{ display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; }
+.electron-btn{
+  width: 28px; height: 28px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; border: none; color: #fff; font-size: 15px;
+  border-radius: 4px; cursor: pointer; transition: background .15s ease;
+}
+.electron-btn:hover{ background: rgba(255,255,255,.15); }
+.electron-btn-close:hover{ background:#e53935; color:#fff; }
+
+/* Flechas + título (fila 2 izquierda) */
+.nav-arrow{
+  width: 28px; height: 28px;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:transparent; color:#fff; border:none; font-size:16px; line-height:1;
+  border-radius:6px; cursor:pointer; transition:background .15s ease, color .2s ease;
+}
+.nav-arrow:hover{ background: rgba(255,255,255,.12); color:#ffd700; }
+
+.electron-title{
+  color:#fff; font-weight:600; font-size:16px; letter-spacing:.2px;
+  font-family:'Poppins', sans-serif; margin-left: 6px;
+}
+
+/* Menú (fila 2 derecha) */
+.top-links{ display:flex; align-items:center; gap:24px; }
+.styled-link{ color:#fff; text-decoration:none; opacity:.92; font-weight:600; }
+.styled-link:hover{ opacity:1; text-decoration:underline; }
+
+/* -------- Contenido debajo del header de 2 filas -------- */
+.content-electron{
+  /* 44 (fila 1) + 56 (fila 2) = 100 */
+  margin-top: 36px;
+  height: calc(100vh - 36px);
+
+}

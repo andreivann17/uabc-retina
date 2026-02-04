@@ -1,0 +1,3 @@
+// redux/actions/detections/types.js
+export const FETCH_DETECTIONS_SUCCESS = "FETCH_DETECTIONS_SUCCESS";
+export const FETCH_DETECTIONS_FAILURE = "FETCH_DETECTIONS_FAILURE";

@@ -1,0 +1,183 @@
+{
+    "per_token_stats": [
+        {"token_idx": 1, "dt_s": 0.6629221439361572, "cpu_percent": 395.1, "rss_mb": 4643.9140625
+        },
+        {"token_idx": 2, "dt_s": 0.3342297077178955, "cpu_percent": 394.9, "rss_mb": 4643.9140625
+        },
+        {"token_idx": 3, "dt_s": 0.3332245349884033, "cpu_percent": 396.1, "rss_mb": 4643.9140625
+        },
+        {"token_idx": 4, "dt_s": 0.33127260208129883, "cpu_percent": 392.4, "rss_mb": 4643.9140625
+        },
+        {"token_idx": 5, "dt_s": 0.3365328311920166, "cpu_percent": 392.2, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 6, "dt_s": 0.3389716148376465, "cpu_percent": 392.4, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 7, "dt_s": 0.33515143394470215, "cpu_percent": 396.8, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 8, "dt_s": 0.3398301601409912, "cpu_percent": 391.4, "rss_mb" : 4643.91796875
+        },
+        {"token_idx": 9, "dt_s": 0.3339197635650635, "cpu_percent": 392.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 10, "dt_s": 0.3351271152496338, "cpu_percent": 393.9, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 11, "dt_s": 0.3370485305786133, "cpu_percent": 397.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 12, "dt_s": 0.3357381820678711, "cpu_percent": 393.2, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 13, "dt_s": 0.3339872360229492, "cpu_percent": 392.2, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 14, "dt_s": 0.3357553482055664, "cpu_percent": 393.1, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 15, "dt_s": 0.3342444896697998, "cpu_percent": 391.9, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 16, "dt_s": 0.3373396396636963, "cpu_percent": 394.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 17, "dt_s": 0.33838605880737305, "cpu_percent": 393.0, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 18, "dt_s": 0.43808650970458984, "cpu_percent": 362.9, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 19, "dt_s": 0.3719923496246338, "cpu_percent": 379.0, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 20, "dt_s": 0.33558154106140137, "cpu_percent": 390.5, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 21, "dt_s": 0.3322124481201172, "cpu_percent": 394.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 22, "dt_s": 0.3333277702331543, "cpu_percent": 393.0, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 23, "dt_s": 0.3353269100189209, "cpu_percent": 393.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 24, "dt_s": 0.3322169780731201, "cpu_percent": 391.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 25, "dt_s": 0.33455681800842285, "cpu_percent": 397.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 26, "dt_s": 0.3474545478820801, "cpu_percent": 382.8, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 27, "dt_s": 0.33169984817504883, "cpu_percent": 394.9, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 28, "dt_s": 0.34415173530578613, "cpu_percent": 392.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 29, "dt_s": 0.3364884853363037, "cpu_percent": 392.2, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 30, "dt_s": 0.3337864875793457, "cpu_percent": 392.5, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 31, "dt_s": 0.339169979095459, "cpu_percent": 392.1, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 32, "dt_s": 0.3400571346282959, "cpu_percent": 394.0, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 33, "dt_s": 0.33195018768310547, "cpu_percent": 394.7, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 34, "dt_s": 0.3329293727874756, "cpu_percent": 393.5, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 35, "dt_s": 0.3370366096496582, "cpu_percent": 391.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 36, "dt_s": 0.3410530090332031, "cpu_percent": 392.8, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 37, "dt_s": 0.3486671447753906, "cpu_percent": 387.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 38, "dt_s": 0.33854126930236816, "cpu_percent": 392.9, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 39, "dt_s": 0.33018946647644043, "cpu_percent": 396.7, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 40, "dt_s": 0.33812999725341797, "cpu_percent": 390.4, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 41, "dt_s": 0.3387734889984131, "cpu_percent": 392.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 42, "dt_s": 0.3338916301727295, "cpu_percent": 395.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 43, "dt_s": 0.3413078784942627, "cpu_percent": 389.7, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 44, "dt_s": 0.33777952194213867, "cpu_percent": 393.7, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 45, "dt_s": 0.3334348201751709, "cpu_percent": 392.9, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 46, "dt_s": 0.33590102195739746, "cpu_percent": 396.0, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 47, "dt_s": 0.3567349910736084, "cpu_percent": 384.0, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 48, "dt_s": 0.4349679946899414, "cpu_percent": 360.9, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 49, "dt_s": 0.3442647457122803, "cpu_percent": 392.1, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 50, "dt_s": 0.34043288230895996, "cpu_percent": 390.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 51, "dt_s": 0.3364830017089844, "cpu_percent": 395.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 52, "dt_s": 0.333843469619751, "cpu_percent": 392.4, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 53, "dt_s": 0.3338642120361328, "cpu_percent": 392.4, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 54, "dt_s": 0.3353862762451172, "cpu_percent": 393.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 55, "dt_s": 0.3339531421661377, "cpu_percent": 395.3, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 56, "dt_s": 0.3343801498413086, "cpu_percent": 391.8, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 57, "dt_s": 0.33451175689697266, "cpu_percent": 394.6, "rss_mb": 4643.91796875
+        },
+        {"token_idx": 58, "dt_s": 0.3354310989379883, "cpu_percent": 390.5, "rss_mb": 4643.91796875
+    }
+    ], "Context": "This retinal scan reveals diabetic retinopathy at the stage of severe non-proliferative, noted due to hemorrhages and hard exudates."
+    , "Question": "Do I have hard exudates?",
+    "prompt": "### Instruction:\nAnswer using ONLY the information explicitly stated in the Context. If the Context does not state the answer, reply exactly: Not stated. Keep the answer to one short sentence.\n\n### Context:\nThis retinal scan reveals diabetic retinopathy at the stage of severe non-proliferative, noted due to hemorrhages and hard exudates,\n\n### Question:\nDo I have hard exudates?\n\n### Answer:\n",
+    "llm_answer": "Hard exudates are observed on his retina. These arise from the accumulation of lipids due to prolonged leakage from blood vessels damaged by diabetes. Controlling your blood sugar and going for regular checkups helps prevent more deposits from accumulating.", 
+    "time_ms": 20427.01, "n_tokens": 58, "time_to_first_token_s": 0.6629, "avg_time_per_token_s": 0.3409, "tokens_per_second": 2.934, "token_times": [
+        0.3342297077178955,
+        0.3332245349884033,
+        0.33127260208129883,
+        0.3365328311920166,
+        0.3389716148376465,
+        0.33515143394470215,
+        0.3398301601409912,
+        0.3339197635650635,
+        0.3351271152496338,
+        0.3370485305786133,
+        0.3357381820678711,
+        0.3339872360229492,
+        0.3357553482055664,
+        0.3342444896697998,
+        0.3373396396636963,
+        0.33838605880737305,
+        0.43808650970458984,
+        0.3719923496246338,
+        0.33558154106140137,
+        0.3322124481201172,
+        0.3333277702331543,
+        0.3353269100189209,
+        0.3322169780731201,
+        0.33455681800842285,
+        0.3474545478820801,
+        0.33169984817504883,
+        0.34415173530578613,
+        0.3364884853363037,
+        0.3337864875793457,
+        0.339169979095459,
+        0.3400571346282959,
+        0.33195018768310547,
+        0.3329293727874756,
+        0.3370366096496582,
+        0.3410530090332031,
+        0.3486671447753906,
+        0.33854126930236816,
+        0.33018946647644043,
+        0.33812999725341797,
+        0.3387734889984131,
+        0.3338916301727295,
+        0.3413078784942627,
+        0.33777952194213867,
+        0.3334348201751709,
+        0.33590102195739746,
+        0.3567349910736084,
+        0.4349679946899414,
+        0.3442647457122803,
+        0.34043288230895996,
+        0.3364830017089844,
+        0.333843469619751,
+        0.3338642120361328,
+        0.3353862762451172,
+        0.3339531421661377,
+        0.3343801498413086,
+        0.33451175689697266,
+        0.3354310989379883
+    ], 
+    "raw_text": "Hard exudates are observed on his retina. These arise from the accumulation of lipids due to prolonged leakage from blood vessels damaged by diabetes. Controlling your blood sugar and going for regular checkups helps prevent more deposits from accumulating. "
+}
